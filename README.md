@@ -1,5 +1,5 @@
 # Machine-Learning
-It contains machine learning codes
+It contains function for removing duplicate columns
 
 FUNCTION FOR REMOVING DUPLICATE COLUMNS
 
