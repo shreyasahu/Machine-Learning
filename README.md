@@ -3,6 +3,7 @@ It contains machine learning codes
 
 FUNCTION FOR REMOVING DUPLICATE COLUMNS
 
+
 import numpy as np
 def dups1(df):
     dupcol = []
@@ -14,7 +15,6 @@ def dups1(df):
              #if test[column[curr_col]].equals(test[column[sel_col]]):
                 dupcol.append(column[sel_col])
                 #test.drop(test.columns[sel_col],axis=1)
-
     df.drop(dupcol, axis=1, inplace=True)
 
     return df
