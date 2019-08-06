@@ -19,3 +19,20 @@ FUNCTION FOR REMOVING DUPLICATE COLUMNS
     df.drop(dupcol, axis=1, inplace=True)
     return df
     dups1(df)
+
+
+ANOTHER WAY
+
+     def dropCol(new_test):
+        #new_test=test_data.copy()
+
+    for col in new_test:
+        
+        if(col in new_test.columns):
+            temp=new_test.drop([col],axis=1)        
+            for a in temp:            
+                if(new_test[col].equals(temp[a])):
+                    new_test.drop(a,axis=1,inplace=True)
+        
+    return new_test        
+    dropCol(df)
